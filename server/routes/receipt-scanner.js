@@ -29,12 +29,7 @@ const bucket = storage.bucket(process.env.GOOGLE_BUCKET_NAME);
 
 /** MULTER MIDDLEWARE */
 const upload = multer({
-	storage: multer.memoryStorage({
-		filename: (req, file, cb) => {
-			const fileName = Date.now() + '-' + file.originalname;
-			cb(null, fileName);
-		},
-	}),
+	storage: multer.memoryStorage(),
 	fileFilter: (req, file, cb) => {
 		if (file.mimetype.startsWith('image/')) {
 			cb(null, true);

@@ -204,8 +204,13 @@ const Record = () => {
 							getRowId={getRowId}
 							checkboxSelection
 							disableRowSelectionOnClick
-							onRowSelectionModelChange={(IDs) => {
-								setDeleteItems(IDs);
+							onRowSelectionModelChange={(selection) => {
+								const ids = selection?.ids
+									? Array.from(selection.ids)
+									: Array.isArray(selection)
+										? selection
+										: [];
+								setDeleteItems(ids);
 							}}
 						/>
 					</Box>
