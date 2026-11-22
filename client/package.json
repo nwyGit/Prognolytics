@@ -25,7 +25,7 @@
     "jotai": "^2.0.3",
     "jwt-decode": "^3.1.2",
     "mongodb": "^4.15.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^9.12.2",
     "next": "^16.4.6",
     "next-auth": "^4.24.15",
     "react": "^19.3.1",
