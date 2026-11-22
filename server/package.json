@@ -24,7 +24,7 @@
 		"mongoose": "^7.0.1",
 		"morgan": "^1.10.0",
 		"multer": "^2.5.0",
-		"next-auth": "^4.20.1",
+		"next-auth": "^4.24.15",
 		"npm": "^9.6.0",
 		"openai": "^3.2.1",
 		"passport": "^0.7.0",
